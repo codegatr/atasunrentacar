@@ -1,0 +1,79 @@
+# ATA SU Rent A Car
+
+Options -Indexes -MultiViews
+DirectoryIndex index.php
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # Hassas dosyalari koru
+    RewriteRule ^(config\.php|config\.sample\.php|manifest\.json)$ - [F,L]
+    RewriteRule ^migrations/ - [F,L]
+    RewriteRule ^includes/.*\.php$ - [F,L]
+    RewriteRule ^assets/uploads/.*\.(php|phtml|phar|pl|py|sh|cgi)$ - [F,L]
+
+    # Var olan dosya/klasore izin ver
+    RewriteCond %{REQUEST_FILENAME} -f [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^ - [L]
+
+    # Temiz URL'ler
+    RewriteRule ^arac/([a-z0-9\-]+)/?$ index.php?sayfa=arac&slug=$1 [QSA,L]
+    RewriteRule ^araclar/?$ index.php?sayfa=araclar [QSA,L]
+    RewriteRule ^blog/?$ index.php?sayfa=blog [QSA,L]
+    RewriteRule ^blog/([a-z0-9\-]+)/?$ index.php?sayfa=yazi&slug=$1 [QSA,L]
+    RewriteRule ^(hakkimizda|iletisim|rezervasyon|gizlilik-politikasi|cerez-politikasi|kvkk|kiralama-sozlesmesi)/?$ index.php?sayfa=$1 [QSA,L]
+    RewriteRule ^sitemap\.xml$ index.php?sayfa=sitemap [L]
+    RewriteRule ^robots\.txt$ index.php?sayfa=robots [L]
+</IfModule>
+
+# Cache - statik dosyalar
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/jpeg "access plus 1 month"
+    ExpiresByType image/png "access plus 1 month"
+    ExpiresByType image/webp "access plus 1 month"
+    ExpiresByType image/svg+xml "access plus 1 month"
+    ExpiresByType image/x-icon "access plus 1 year"
+    ExpiresByType text/css "access plus 1 week"
+    ExpiresByType application/javascript "access plus 1 week"
+    ExpiresByType font/woff2 "access plus 1 year"
+    ExpiresByType font/woff "access plus 1 year"
+    ExpiresByType application/font-woff2 "access plus 1 year"
+    ExpiresByType text/html "access plus 1 hour"
+</IfModule>
+
+# Gzip sikistirma (SEO + performans)
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/css text/javascript application/javascript application/json application/xml text/xml application/rss+xml image/svg+xml font/woff font/woff2
+</IfModule>
+
+# Guvenlik basliklari + SEO
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+    Header set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+    # Cache-Control for static assets
+    <FilesMatch "\.(jpg|jpeg|png|gif|webp|ico|svg|css|js|woff|woff2)$">
+        Header set Cache-Control "public, max-age=2592000"
+    </FilesMatch>
+</IfModule>
+
+# 301 redirects (SEO - tek versiyona yonlendir)
+<IfModule mod_rewrite.c>
+    # HTTP -> HTTPS (kurulumdan sonra acin)
+    # RewriteCond %{HTTPS} off
+    # RewriteCond %{HTTP:X-Forwarded-Proto} !https
+    # RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [L,R=301]
+
+    # www -> non-www (istege bagli, varsa acin)
+    # RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+    # RewriteRule ^(.*)$ https://%1/$1 [L,R=301]
+
+    # Sondan / kaldir (trailing slash) - dosya/dizin haric
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^(.+)/$ /$1 [L,R=301]
+</IfModule>

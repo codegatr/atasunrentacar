@@ -1,0 +1,40 @@
+# Hassas dosyalar - ASLA commit edilmemeli
+config.php
+config.local.php
+manifest.local.json
+
+# Yuklenen dosyalar - kullaniciya ait
+assets/uploads/araclar/*
+assets/uploads/blog/*
+assets/uploads/sigorta/*
+assets/uploads/muayene/*
+assets/uploads/hasar/*
+!assets/uploads/araclar/.gitkeep
+!assets/uploads/blog/.gitkeep
+!assets/uploads/sigorta/.gitkeep
+!assets/uploads/muayene/.gitkeep
+!assets/uploads/hasar/.gitkeep
+!assets/uploads/.htaccess
+!assets/uploads/index.html
+
+# Yedekler - guncelleme klasoru
+assets/yedekler/
+
+# Sistem dosyalari
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Log dosyalari
+*.log
+
+# IDE
+.idea/
+.vscode/
+*.sublime-*
+
+# OS gecici dosyalar
+.directory
+desktop.ini

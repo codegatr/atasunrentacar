@@ -1,0 +1,330 @@
+{
+    "name": "ATA SU Rent A Car",
+    "slug": "atasu-rentacar",
+    "version": "1.0.4",
+    "release_date": "2026-04-25",
+    "min_php": "8.3",
+    "vendor": "CODEGA",
+    "vendor_url": "https://codega.com.tr",
+    "update_url": "https://atasurentacar.com/admin/guncelleme.php",
+    "exclude_from_zip": [
+        "config.php",
+        ".htaccess",
+        "assets/uploads/",
+        "manifest.local.json"
+    ],
+    "files": [
+        {
+            "path": ".htaccess",
+            "sha256": "053a9872de02da68ee28dccbf4b48d23496bea09679a5e6162a29ccd30cb4cc9",
+            "size": 3112
+        },
+        {
+            "path": "admin/_init.php",
+            "sha256": "3f9e4a0c2ee87c861511cf1eb041924a05873ab94f9f12471b67360391e1b339",
+            "size": 1760
+        },
+        {
+            "path": "admin/_layout_basla.php",
+            "sha256": "e1d1d11473862a3b91e26d995e47bcf19a441680c151898f618b60d52e730e84",
+            "size": 5386
+        },
+        {
+            "path": "admin/_layout_bitir.php",
+            "sha256": "3faf01d396ef0d0f68d28957fe0c5306d52b7b6c98c42667bd23a61b65e36cfa",
+            "size": 111
+        },
+        {
+            "path": "admin/arac-duzenle.php",
+            "sha256": "73ad8330b838e6a6f852602edab01c09935e1015d7aab85f0c2024bbe11538ec",
+            "size": 18078
+        },
+        {
+            "path": "admin/araclar.php",
+            "sha256": "eaa6d8884a11fcbe0f006a07901c7501524af6d5a71802b0e6753de37403b431",
+            "size": 5945
+        },
+        {
+            "path": "admin/assets/admin.css",
+            "sha256": "c01f580e432b70e5adec54e265387f0efd68b06c36a93b33f438463e69d945a2",
+            "size": 12087
+        },
+        {
+            "path": "admin/assets/admin.js",
+            "sha256": "0af1a52407c5238e0726d912afe74eee79ad3c52eb9831999e3d46a4c05305d7",
+            "size": 2085
+        },
+        {
+            "path": "admin/ayarlar.php",
+            "sha256": "cdcc1f9d72bcdda885a40439026c5169bae61a807eb678b850b030470b7cfc52",
+            "size": 17178
+        },
+        {
+            "path": "admin/bakimlar.php",
+            "sha256": "9439e210347b913e599d5b476fad206aa4834b7883b292b6fe80cc299e322f49",
+            "size": 6186
+        },
+        {
+            "path": "admin/blog-duzenle.php",
+            "sha256": "29bf75086ca6ce4fb46a57b26bf164908a5edd2324e97061d8a91509324c0867",
+            "size": 6422
+        },
+        {
+            "path": "admin/bloglar.php",
+            "sha256": "4b228b14dd412446bbe170e7d7fcb002119ef14298fdb68453d17b93f86d6be3",
+            "size": 4257
+        },
+        {
+            "path": "admin/cikis.php",
+            "sha256": "1eb84d7928965049a7b8628b10752f020d6b3452159dd6b167a773ac38dfba5b",
+            "size": 422
+        },
+        {
+            "path": "admin/ek-hizmetler.php",
+            "sha256": "d1ab0f9a337850b8ef821a0fad2b9a7223bbab67a5673d99859eb99a7f19a03f",
+            "size": 5145
+        },
+        {
+            "path": "admin/gelir-gider.php",
+            "sha256": "575b0e3e274b0896332615043dfa3d36442a9b31b1599bc84db2ccf3f921fc3a",
+            "size": 8442
+        },
+        {
+            "path": "admin/giris.php",
+            "sha256": "d9704c155fbba08ecc3b44bff3ae1910898c57f63278aaff41de1f22d9751974",
+            "size": 2393
+        },
+        {
+            "path": "admin/guncelleme.php",
+            "sha256": "cb685d5eb7c074ff7d5c23402e386af2cfba32aee9a4581ea48224bbc6f27ddb",
+            "size": 9525
+        },
+        {
+            "path": "admin/hasarlar.php",
+            "sha256": "472cbc35a9d00190a0bdd1a3a0789b46c3d478516f42e02e7e9bc7a3741707e7",
+            "size": 8468
+        },
+        {
+            "path": "admin/iletisim-mesajlari.php",
+            "sha256": "a99822369f559fd2cd93056eb401bbf7af0f36d6ad4e1c4201f4f534119b2ff8",
+            "size": 5750
+        },
+        {
+            "path": "admin/index.php",
+            "sha256": "6fea9e25aa46abbf9c5f02b189d7ef8feaa6d02ba02f201dbed101da87f2913d",
+            "size": 7238
+        },
+        {
+            "path": "admin/kategoriler.php",
+            "sha256": "07a859b0025a99e31f3a75c820cccc584b60ffc20336d90e6261a3fd343bdeaf",
+            "size": 4956
+        },
+        {
+            "path": "admin/kullanici-duzenle.php",
+            "sha256": "fc830ae5ad1d5b5b47a489a91d417f98d3db123c29e5353cd76ac56a5330b31f",
+            "size": 5855
+        },
+        {
+            "path": "admin/kullanicilar.php",
+            "sha256": "110f11a6613e217f218a043505a7c2ae20b472f69e8ccb5d3648ca7e6ef8cfc4",
+            "size": 3539
+        },
+        {
+            "path": "admin/muayeneler.php",
+            "sha256": "15f25b57467f1f255a6c465527068398e111bc1f8c08975c85d6ef9d9b7f92fe",
+            "size": 7715
+        },
+        {
+            "path": "admin/musteri-duzenle.php",
+            "sha256": "12a1f5769bd8bc92add3fe18d1f16cff9b75e9b78c29f866e298cfa0373f2a04",
+            "size": 6951
+        },
+        {
+            "path": "admin/musteriler.php",
+            "sha256": "c79a0619c0e12ac4d6bbef7961bfaac54083d2a80a2f2abf8aadabbf1b653c1e",
+            "size": 4530
+        },
+        {
+            "path": "admin/raporlar.php",
+            "sha256": "a40a868cb874b3d5cd51ba87ca0468bb398870f369c84e25613e4c6cdb54d3f0",
+            "size": 9119
+        },
+        {
+            "path": "admin/rezervasyon-duzenle.php",
+            "sha256": "d446b97628f2d82bb8f6c5410d2987edb15ee15e3679e662a666f4c480120756",
+            "size": 14685
+        },
+        {
+            "path": "admin/rezervasyonlar.php",
+            "sha256": "0a2499ad7a03055a73ec9e619cb76a1905aac0598685756fc37d52b5ddc9bf82",
+            "size": 4904
+        },
+        {
+            "path": "admin/sigortalar.php",
+            "sha256": "7342832bf004c37550c637b49836048c7c91b5ec7ae6b9ed03f94953e69e4076",
+            "size": 8139
+        },
+        {
+            "path": "admin/yorumlar.php",
+            "sha256": "ecbf8bd9184a8821e0033d3568d3db56e8174947b15c4c83cf3719f4eff37489",
+            "size": 7483
+        },
+        {
+            "path": "assets/css/style.css",
+            "sha256": "35dfc5d85204e5b845feab1aab62050e55d1d0f1a582445b36a2b6965067edfc",
+            "size": 29876
+        },
+        {
+            "path": "assets/img/index.html",
+            "sha256": "4afd8ca2e9fa54798ca19c7a96e1b16f457e69a1051402f1da6c9560dea32fb9",
+            "size": 15
+        },
+        {
+            "path": "assets/js/main.js",
+            "sha256": "fecc91a1637f43d0113faff99e4ea17d94f9690d42a5b00587ac65c34928261f",
+            "size": 2067
+        },
+        {
+            "path": "assets/uploads/.htaccess",
+            "sha256": "9564edb82a935727a3f0d07f0007c699904222e94d7a37953339e0fdc3138d42",
+            "size": 407
+        },
+        {
+            "path": "assets/uploads/index.html",
+            "sha256": "4afd8ca2e9fa54798ca19c7a96e1b16f457e69a1051402f1da6c9560dea32fb9",
+            "size": 15
+        },
+        {
+            "path": "config.sample.php",
+            "sha256": "b1eacbe97888c45a6a67efb376fcaf23a8b1571d61af6c08bc3f0e3585e6a030",
+            "size": 1612
+        },
+        {
+            "path": "includes/baglanti.php",
+            "sha256": "97a3d23f2e1c4c402c023c2a49a9d3c0694edd0ef3693edebbfa480a3050fb45",
+            "size": 3188
+        },
+        {
+            "path": "includes/bootstrap.php",
+            "sha256": "b62945aa8ed820c396c9f47cd6c648547cfc8a46bb22bb12c6b4668407feed26",
+            "size": 879
+        },
+        {
+            "path": "includes/fonksiyonlar.php",
+            "sha256": "9534087776c5756407d646d1e9f8711e82cfa358519003889997f2095688e080",
+            "size": 6653
+        },
+        {
+            "path": "includes/layout_basla.php",
+            "sha256": "440a647ab6359b75f58a157ebebcc7a7e37fa048c2541e004d17c4ca86834b20",
+            "size": 11681
+        },
+        {
+            "path": "includes/layout_bitir.php",
+            "sha256": "45eb72ea9270eaa45050e4c0292ac60610049af32886c92bdfeee9d170bb7036",
+            "size": 4807
+        },
+        {
+            "path": "includes/mail.php",
+            "sha256": "31384ad150b91bc60c5eba2d8f3a734a99cb30e51a88236a562e603468c45fd9",
+            "size": 11378
+        },
+        {
+            "path": "includes/migration.php",
+            "sha256": "092b72632588132ac07051e56b345464a3f3d45b609f2f2bfdb8a64a4465bc53",
+            "size": 2107
+        },
+        {
+            "path": "includes/views/404.php",
+            "sha256": "5891b6192cfb1e83a150f1e096edc4711c7e6b011a28d0b1c62bc5e4afc85782",
+            "size": 624
+        },
+        {
+            "path": "includes/views/anasayfa.php",
+            "sha256": "9860a301182fc0bb879dec180641c26113f1a3ce462dfd3d19bafb73aa652c04",
+            "size": 18239
+        },
+        {
+            "path": "includes/views/arac.php",
+            "sha256": "676d726d05ae4962636ec54745699f496afb86beee8e54c7eed7bc0a6b0a9e22",
+            "size": 6677
+        },
+        {
+            "path": "includes/views/araclar.php",
+            "sha256": "eca92e7a91f2a888297cdf71662714d3746eb068da7cc282475d0f24a106c59f",
+            "size": 7986
+        },
+        {
+            "path": "includes/views/blog.php",
+            "sha256": "aa95e5407832c05b08edfc4d764677beb8515b4137c4d797b13dbcdde6a25007",
+            "size": 1253
+        },
+        {
+            "path": "includes/views/hakkimizda.php",
+            "sha256": "74f7f00721fc1098d01168c69939ca637107c23e6f47c8ed7ee5c3090055b602",
+            "size": 952
+        },
+        {
+            "path": "includes/views/iletisim.php",
+            "sha256": "9d7615989ece2b8c0507eeb03cc8bb366bbe9eb32691b88c56ae2409b39471f6",
+            "size": 3818
+        },
+        {
+            "path": "includes/views/rezervasyon.php",
+            "sha256": "e7417be1412adaeef7e5a78fb2e97555cecdd88b54bf3b545fc1311b984e7e0c",
+            "size": 6421
+        },
+        {
+            "path": "includes/views/yasal.php",
+            "sha256": "4740a603e140c597ff6eeb61079e2106542c9b5679c704277e512b69a0c9a6a8",
+            "size": 562
+        },
+        {
+            "path": "includes/views/yazi.php",
+            "sha256": "0aec4aab7b723e4d84660345a2115bc1fcdc1a06c656066249260e135cef6e4e",
+            "size": 1822
+        },
+        {
+            "path": "index.php",
+            "sha256": "79e1f15de3efb803216bbc9801f6f1b17c889a8038b48de28ef5de097bec9f80",
+            "size": 36967
+        },
+        {
+            "path": "install.php",
+            "sha256": "ef540eb02d7dd28390251358159de45452b6861d8c2122cb92c5f34350b1335a",
+            "size": 14216
+        },
+        {
+            "path": "migrations/001_baslangic_semasi.sql",
+            "sha256": "8f8ac9787e47af4adda07ef695c179c33477f1f9b4a1a82760911f23dd07ad70",
+            "size": 13440
+        },
+        {
+            "path": "migrations/002_baslangic_verileri.sql",
+            "sha256": "ee04573f131c9ce2bec9e363456d071bc747a27e2e02814c4fca91c54ef413d6",
+            "size": 4760
+        },
+        {
+            "path": "migrations/003_yasal_metinler.sql",
+            "sha256": "03c95f0d832638e010166119efa93d1966e886b2839e6759d882fc8f6fa3a7cd",
+            "size": 20047
+        },
+        {
+            "path": "migrations/004_seo_alanlari.sql",
+            "sha256": "77a60716d48d8a720bbcecac46e4d97c7051e84505d3fa4c6dea784b36e3e31a",
+            "size": 2346
+        },
+        {
+            "path": "migrations/005_baslangic_bloglar.sql",
+            "sha256": "dd04b072df8ad0b08be6e1337502373fde0425d58d1db26f241f729e34bbae6f",
+            "size": 25323
+        },
+        {
+            "path": "migrations/006_baslangic_araclari.sql",
+            "sha256": "9d8ee03b11c3661b21ca73093ea79f1ff16a4dc60bbe6856972994c84960632d",
+            "size": 3202
+        }
+    ],
+    "file_count": 62,
+    "build_date": "2026-04-27 17:31:40"
+}
