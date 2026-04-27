@@ -2,6 +2,7 @@
 config.php
 config.local.php
 manifest.local.json
+admin/.gh_token
 
 # Yuklenen dosyalar - kullaniciya ait
 assets/uploads/araclar/*

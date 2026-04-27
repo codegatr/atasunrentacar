@@ -1,7 +1,7 @@
 {
     "name": "ATA SU Rent A Car",
     "slug": "atasu-rentacar",
-    "version": "1.0.5",
+    "version": "1.1.0",
     "release_date": "2026-04-27",
     "min_php": "8.3",
     "vendor": "CODEGA",
@@ -14,6 +14,11 @@
         "manifest.local.json"
     ],
     "files": [
+        {
+            "path": ".gitignore",
+            "sha256": "c0834491fc406d3834ce5e68eab95b2c2544a2688f3d122c72fdef62dcd30d74",
+            "size": 687
+        },
         {
             "path": ".htaccess",
             "sha256": "053a9872de02da68ee28dccbf4b48d23496bea09679a5e6162a29ccd30cb4cc9",
@@ -96,8 +101,8 @@
         },
         {
             "path": "admin/guncelleme.php",
-            "sha256": "f6a302094e254263b9bc04d2759c308a329da015e4b199b1ebcc22349579eb7c",
-            "size": 20836
+            "sha256": "568c9a9c270f24f3794619461556d2487d81c57b29e9a1e022792462b990c07f",
+            "size": 49199
         },
         {
             "path": "admin/hasarlar.php",
@@ -330,6 +335,6 @@
             "size": 678
         }
     ],
-    "file_count": 63,
-    "build_date": "2026-04-27 17:38:04"
+    "file_count": 64,
+    "build_date": "2026-04-27 17:46:25"
 }
